@@ -1,0 +1,59 @@
+@mixin cont($cont-width,$cont-height,$cont-display,$cont-flex-direction,$cont-background,$cont-position){
+   width: $cont-width;
+   height: $cont-height;
+   display: $cont-display;
+   flex-direction: $cont-flex-direction;
+   background: $cont-background;
+   position: $cont-position;
+}
+
+@mixin soc($soc-width,$soc-height,$soc-display,$soc-flex-direction,$soc-overflow,$soc-position){
+   width: $soc-width;
+   height: $soc-height;
+   display: $soc-display;
+   flex-direction: $soc-flex-direction;
+   overflow: $soc-overflow;
+   position: $soc-position;
+}
+
+@mixin block($block-width,$block-height,$block-display,
+            $block-justify-content,$block-align-items,
+            $block-background){
+   width: $block-width;
+   height: $block-height;
+   display: $block-display;
+   justify-content: $block-justify-content;
+   align-items: $block-align-items;
+   background: $block-background;
+}
+
+@mixin block-1($block-1-width,$block-1-height,$block-1-display,
+               $block-1-justify-content,$block-1-align-items,
+               $block-1-position,$block-1-transform,$block-1-transition,
+               $block-1-background){
+   width: $block-1-width;
+   height: $block-1-height;
+   display: $block-1-display;
+   justify-content: $block-1-justify-content;
+   align-items: $block-1-align-items;
+   position: $block-1-position;
+   transform: $block-1-transform;
+   transition: $block-1-transition;
+   background: $block-1-background;
+}
+
+@mixin block-2($block-2-width,$block-2-height,$block-2-display,$block-2-position,
+               $block-2-left,$block-2-white-space,$block-2-font-size,$block-2-line-height,
+               $block-2-padding,$block-2-animation-name,$block-2-animation-duration){
+   width: 750px;
+   height: 450px;
+   display: none;
+   position: absolute;
+   left: 200px;
+   white-space: nowrap;
+   font-size: 30px;
+   line-height: 45px;
+   padding: 100px 30px;
+   animation-name: twit;
+   animation-duration: .5s;
+}

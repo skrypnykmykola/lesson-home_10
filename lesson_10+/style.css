@@ -1,0 +1,450 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  height: 1500px;
+  background-color: rgb(231, 127, 127);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container {
+  width: 100%;
+  height: 30%;
+  background-color: rgb(95, 169, 221);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.container-twit {
+  width: 200px;
+  height: 100%;
+  position: relative;
+}
+
+.twit {
+  width: 199px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.twit-block {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+}
+
+.sprite-t {
+  width: 170px;
+  height: 170px;
+  margin: 150px 10px;
+  content: url(./img/twitter.svg);
+}
+
+.twit-block-1 {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  transform: translate(200px);
+  transition: 0.5s;
+  background-color: rgb(73, 186, 234);
+}
+
+.container-twit:hover .twit-block-1 {
+  transform: translate(0px);
+  display: block;
+}
+
+.twit-block-2 {
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 200px;
+  transform: translate(0px);
+  background-color: white;
+  transition: 0.5s;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.container-twit:hover .twit-block-2 {
+  width: 500px;
+}
+
+.container-face {
+  width: 200px;
+  height: 100%;
+  position: relative;
+}
+
+.face {
+  width: 199px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.face-block {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+}
+
+.sprite-f {
+  width: 170px;
+  height: 170px;
+  margin: 150px 10px;
+  content: url(./img/facebook\ \(2\).svg);
+}
+
+.face-block-1 {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  transform: translate(200px);
+  transition: 0.5s;
+  background-color: rgb(71, 71, 211);
+}
+
+.container-face:hover .face-block-1 {
+  transform: translate(0px);
+  display: block;
+}
+
+.face-block-2 {
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 200px;
+  transform: translate(0px);
+  background-color: white;
+  transition: 0.5s;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.container-face:hover .face-block-2 {
+  width: 500px;
+}
+
+.container-in {
+  width: 200px;
+  height: 100%;
+  position: relative;
+}
+
+.in {
+  width: 199px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.in-block {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+}
+
+.sprite-in {
+  width: 170px;
+  height: 170px;
+  margin: 150px 10px;
+  content: url(./img/linkedin\ \(2\).svg);
+}
+
+.in-block-1 {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  transform: translate(200px);
+  transition: 0.5s;
+  background-color: rgb(12, 55, 148);
+}
+
+.container-in:hover .in-block-1 {
+  transform: translate(0px);
+  display: block;
+}
+
+.in-block-2 {
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 200px;
+  transform: translate(0px);
+  background-color: white;
+  transition: 0.5s;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.container-in:hover .in-block-2 {
+  width: 500px;
+}
+
+.container-insta {
+  width: 200px;
+  height: 100%;
+  position: relative;
+}
+
+.insta {
+  width: 199px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.insta-block {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+}
+
+.sprite-insta {
+  width: 170px;
+  height: 170px;
+  margin: 150px 10px;
+  content: url(./img/instagram-alt\ \(2\).svg);
+}
+
+.insta-block-1 {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  transform: translate(200px);
+  transition: 0.5s;
+  background-color: rgb(57, 123, 9);
+}
+
+.container-insta:hover .insta-block-1 {
+  transform: translate(0px);
+  display: block;
+}
+
+.insta-block-2 {
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 200px;
+  transform: translate(0px);
+  background-color: white;
+  transition: 0.5s;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.container-insta:hover .insta-block-2 {
+  width: 500px;
+}
+
+.container-you {
+  width: 200px;
+  height: 100%;
+  position: relative;
+}
+
+.you {
+  width: 199px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.you-block {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+}
+
+.sprite-you {
+  width: 170px;
+  height: 170px;
+  margin: 150px 10px;
+  content: url(./img/youtube.svg);
+}
+
+.you-block-1 {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  transform: translate(200px);
+  transition: 0.5s;
+  background-color: rgb(183, 49, 15);
+}
+
+.container-you:hover .you-block-1 {
+  transform: translate(0px);
+  display: block;
+}
+
+.you-block-2 {
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 200px;
+  transform: translate(0px);
+  background-color: white;
+  transition: 0.5s;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.container-you:hover .you-block-2 {
+  width: 500px;
+}
+
+.container-tum {
+  width: 200px;
+  height: 100%;
+  position: relative;
+}
+
+.tum {
+  width: 199px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.tum-block {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+}
+
+.sprite-tum {
+  width: 170px;
+  height: 170px;
+  margin: 150px 10px;
+  content: url(./img/tumblr-square\ \(2\).svg);
+}
+
+.tum-block-1 {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  transform: translate(200px);
+  transition: 0.5s;
+  background-color: rgb(35, 14, 9);
+}
+
+.container-tum:hover .tum-block-1 {
+  transform: translate(0px);
+  display: block;
+}
+
+.tum-block-2 {
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 200px;
+  transform: translate(0px);
+  background-color: white;
+  transition: 0.5s;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.container-tum:hover .tum-block-2 {
+  width: 500px;
+}
+
+.container-drib {
+  width: 200px;
+  height: 100%;
+  position: relative;
+}
+
+.drib {
+  width: 199px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.drib-block {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+}
+
+.sprite-drib {
+  width: 170px;
+  height: 170px;
+  margin: 150px 10px;
+  content: url(./img/dribbble.svg);
+}
+
+.drib-block-1 {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  transform: translate(200px);
+  transition: 0.5s;
+  background-color: rgb(118, 25, 2);
+}
+
+.container-drib:hover .drib-block-1 {
+  transform: translate(0px);
+  display: block;
+}
+
+.drib-block-2 {
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 200px;
+  transform: translate(0px);
+  background-color: white;
+  transition: 0.5s;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.container-drib:hover .drib-block-2 {
+  width: 500px;
+}
+
+/*# sourceMappingURL=style.css.map */

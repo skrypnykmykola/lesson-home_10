@@ -1,0 +1,57 @@
+@mixin cont-soc($cont-soc-width,$cont-soc-height,$cont-soc-position){
+   width: $cont-soc-width;
+   height: $cont-soc-height;
+   position: $cont-soc-position;
+}
+
+@mixin socl($socl-width,$socl-height,$socl-position,$socl-overflow){
+   width: $socl-width;
+   height: $socl-height;
+   position: $socl-position;
+   overflow: $socl-overflow; 
+}
+
+@mixin block($block-width,$block-height,$block-position){
+   width: $block-width;
+  height: $block-height;
+  position: $block-position;
+}
+
+@mixin sprite($spite-width,$sprite-height,$spite-margin){
+   width: $spite-width;
+   height: $sprite-height;
+   margin: $spite-margin;
+}
+
+@mixin block1($block1-width,$block1-height,$block1-position,$block1-transform,$block1-transition){
+   width: $block1-width;
+   height: $block1-height;
+   position: $block1-position;
+   transform: $block1-transform;
+   transition: $block1-transition;
+}
+
+@mixin block2($block2-width,$block2-height,$block2-position,$block2-display,
+               $block2-justify-content,$block2-align-items,$block2-left,
+               $block2-transform,$block2-background-color,
+               $block2-transition,$block2-overflow,$block2-white-space,
+               $block2-font-size,$block2-z-index){
+                  width: $block2-width;
+                  height: $block2-height;
+                  position: $block2-position;
+                  display: $block2-display;
+                  justify-content: $block2-justify-content;
+                  align-items: $block2-align-items;
+                  left: $block2-left;
+                  transform: $block2-transform;
+                  background-color: $block2-background-color;
+                  transition: $block2-transition;
+                  overflow: $block2-overflow;
+                  white-space: $block2-white-space;
+                  font-size: $block2-font-size;
+                  z-index: $block2-z-index;
+
+}
+
+
+

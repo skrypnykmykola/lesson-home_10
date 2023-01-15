@@ -1,0 +1,454 @@
+@import "./scss/mixsin.scss";
+@import"./scss/pallete.scss";
+
+*{
+   box-sizing: border-box;
+}
+
+.wrapper {
+   background-color: $bg-color;
+   width: 100%;
+   height: 1500px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.container {
+   width: 100%;
+   height: 30%;
+   display: flex;
+   flex-direction: row;
+   background-color: $btn-color;
+  
+}
+
+.container-twit {
+   @include cont( 200px, 450px, flex, row, rgb(64, 149, 233), relative);
+  
+}
+
+.twit {
+   @include soc(200px, 100%, flex, row, hidden, absolute);
+  
+}
+
+.twit-block {
+   @include block(200px, 100%, flex, center, center, rgb(64, 149, 233));
+
+}
+
+.twit-icon{
+   width: 100px;
+   content: url(./img/twitter.svg);
+}
+
+.twit-block-1 {
+   @include block-1(200px, 100%, flex, center, center, absolute, translate(200px), .5s, rgb(87, 164, 240));
+
+}
+
+.container-twit:hover .twit-block-1 {
+   transform: translate(0px);
+   content: url(./img/twitter-alt.svg);
+  
+}
+
+.twit-block-2 {
+   @include block-2(750px, 450px, none, absolute, 200px, nowrap, 30px, 45px, 100px 30px, twit, .5s);
+   
+}
+
+.container-twit:hover .twit-block-2 {
+   display: block;
+   background: white;
+   z-index: 1;
+
+}
+
+
+@keyframes twit {
+
+   0% {
+      width: 0px;
+      
+   }
+
+   100% {
+      width: 750px;
+
+   }
+}
+
+.container-face {
+   @include cont( 200px, 450px, flex, row, rgb(64, 149, 233), relative);
+  
+}
+
+.face {
+   @include soc(200px, 100%, flex, row, hidden, absolute);
+  
+}
+
+.face-block {
+   @include block(200px, 100%, flex, center, center, rgb(64, 149, 233));
+
+}
+
+.face-icon{
+   width: 100px;
+   content: url(./img/facebook\ \(2\).svg);
+}
+
+.face-block-1 {
+   @include block-1(200px, 100%, flex, center, center, absolute, translate(200px), .5s, rgb(87, 164, 240));
+
+}
+
+.container-face:hover .face-block-1 {
+   transform: translate(0px);
+   background: rgb(33, 92, 164);
+   content: url(./img/facebook.svg);
+  
+  
+}
+
+.face-block-2 {
+   @include block-2(750px, 450px, none, absolute, 400px, nowrap, 30px, 45px, 100px 30px, twit, .5s);
+   
+}
+
+.container-face:hover .face-block-2 {
+   display: block;
+   overflow: hidden;
+   background: white;
+   z-index: 1;
+
+}
+
+
+@keyframes twit {
+
+   0% {
+      width: 0px;
+      
+   }
+
+   100% {
+      width: 750px;
+
+   }
+}
+
+
+.container-in {
+   @include cont( 200px, 450px, flex, row, rgb(64, 149, 233), relative);
+  
+}
+
+.in {
+   @include soc(200px, 100%, flex, row, hidden, absolute);
+  
+}
+
+.in-block {
+   @include block(200px, 100%, flex, center, center, rgb(64, 149, 233));
+
+}
+
+.in-icon{
+   width: 100px;
+   content: url(./img/linkedin\ \(2\).svg);
+}
+
+.in-block-1 {
+   @include block-1(200px, 100%, flex, center, center, absolute, translate(200px), .5s, rgb(87, 164, 240));
+
+}
+
+.container-in:hover .in-block-1 {
+   transform: translate(0px);
+   background: rgb(9, 61, 124);
+   content: url(./img/linkedin.svg);
+  
+  
+}
+
+.in-block-2 {
+   @include block-2(750px, 450px, none, absolute, 600px, nowrap, 30px, 45px, 100px 30px, twit, .5s);
+   
+}
+
+.container-in:hover .in-block-2 {
+   display: block;
+   overflow: hidden;
+   background: white;
+   z-index: 1;
+
+}
+
+
+@keyframes twit {
+
+   0% {
+      width: 0px;
+      
+   }
+
+   100% {
+      width: 750px;
+
+   }
+}
+
+
+
+.container-insta {
+   @include cont( 200px, 450px, flex, row, rgb(64, 149, 233), relative);
+  
+}
+
+.insta {
+   @include soc(200px, 100%, flex, row, hidden, absolute);
+  
+}
+
+.insta-block {
+   @include block(200px, 100%, flex, center, center, rgb(64, 149, 233));
+
+}
+
+.insta-icon{
+   width: 100px;
+   content: url(./img/instagram-alt\ \(2\).svg);
+}
+
+.insta-block-1 {
+   @include block-1(200px, 100%, flex, center, center, absolute, translate(200px), .5s, rgb(87, 164, 240));
+
+}
+
+.container-insta:hover .insta-block-1 {
+   transform: translate(0px);
+   background: rgb(33, 164, 40);
+   content: url(./img/instagram-alt.svg);
+  
+  
+}
+
+.insta-block-2 {
+   @include block-2(750px, 450px, none, absolute, 800px, nowrap, 30px, 45px, 100px 30px, twit, .5s);
+   
+}
+
+.container-insta:hover .insta-block-2 {
+   display: block;
+   overflow: hidden;
+   background: white;
+   z-index: 1;
+
+}
+
+
+@keyframes twit {
+
+   0% {
+      width: 0px;
+      
+   }
+
+   100% {
+      width: 750px;
+
+   }
+}
+
+
+
+.container-you {
+   @include cont( 200px, 450px, flex, row, rgb(64, 149, 233), relative);
+  
+}
+
+.you {
+   @include soc(200px, 100%, flex, row, hidden, absolute);
+  
+}
+
+.you-block {
+   @include block(200px, 100%, flex, center, center, rgb(64, 149, 233));
+
+}
+
+.you-icon{
+   width: 100px;
+   content: url(./img/youtube.svg);
+}
+
+.you-block-1 {
+   @include block-1(200px, 100%, flex, center, center, absolute, translate(200px), .5s, rgb(87, 164, 240));
+
+}
+
+.container-you:hover .you-block-1 {
+   transform: translate(0px);
+   background: rgba(228, 38, 21, 0.54);
+   content: url(./img/youtube.svg);
+  
+  
+}
+
+.you-block-2 {
+   @include block-2(750px, 450px, none, absolute, 1000px, nowrap, 30px, 45px, 100px 30px, twit, .5s);
+   
+}
+
+.container-you:hover .you-block-2 {
+   display: block;
+   overflow: hidden;
+   background: white;
+   z-index: 1;
+
+}
+
+
+@keyframes twit {
+
+   0% {
+      width: 0px;
+      
+   }
+
+   100% {
+      width: 750px;
+
+   }
+}
+
+
+
+.container-tumb {
+   @include cont( 200px, 450px, flex, row, rgb(64, 149, 233), relative);
+  
+}
+
+.tumb {
+   @include soc(200px, 100%, flex, row, hidden, absolute);
+  
+}
+
+.tumb-block {
+   @include block(200px, 100%, flex, center, center, rgb(64, 149, 233));
+
+}
+
+.tumb-icon{
+   width: 100px;
+   content: url(./img/tumblr-square\ \(2\).svg);
+}
+
+.tumb-block-1 {
+   @include block-1(200px, 100%, flex, center, center, absolute, translate(200px), .5s, rgb(87, 164, 240));
+
+}
+
+.container-tumb:hover .tumb-block-1 {
+   transform: translate(0px);
+   background: rgb(24, 29, 25);
+   content: url(./img/tumblr-square\ \(2\).svg);
+  
+  
+}
+
+.tumb-block-2 {
+   @include block-2(750px, 450px, none, absolute, 1200px, nowrap, 30px, 45px, 100px 30px, twit, .5s);
+   
+}
+
+.container-tumb:hover .tumb-block-2 {
+   display: block;
+   overflow: hidden;
+   background: white;
+   z-index: 1;
+
+}
+
+
+@keyframes twit {
+
+   0% {
+      width: 0px;
+      
+   }
+
+   100% {
+      width: 750px;
+
+   }
+}
+
+
+
+.container-drib {
+   @include cont( 200px, 450px, flex, row, rgb(64, 149, 233), relative);
+  
+}
+
+.drib {
+   @include soc(200px, 100%, flex, row, hidden, absolute);
+  
+}
+
+.drib-block {
+   @include block(200px, 100%, flex, center, center, rgb(64, 149, 233));
+
+}
+
+.drib-icon{
+   width: 100px;
+   content: url(./img/dribbble.svg);
+}
+
+.drib-block-1 {
+   @include block-1(200px, 100%, flex, center, center, absolute, translate(200px), .5s, rgb(87, 164, 240));
+
+}
+
+.container-drib:hover .drib-block-1 {
+   transform: translate(0px);
+   background: rgb(213, 48, 23);
+   content: url(./img/dribbble.svg);
+  
+  
+}
+
+.drib-block-2 {
+   @include block-2(750px, 450px, none, absolute, 1400px, nowrap, 30px, 45px, 100px 30px, twit, .5s);
+   
+}
+
+.container-drib:hover .drib-block-2 {
+   display: block;
+   overflow: hidden;
+   background: white;
+   z-index: 1;
+
+}
+
+
+@keyframes twit {
+
+   0% {
+      width: 0px;
+      
+   }
+
+   100% {
+      width: 750px;
+
+   }
+}
+
+
+
+

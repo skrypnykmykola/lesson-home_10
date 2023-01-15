@@ -1,0 +1,307 @@
+@import "./scss/pallet.scss";
+@import"./scss/mixins.scss";
+
+* {
+   box-sizing: border-box;
+}
+
+.wrapper {
+   width: 100%;
+   height: 1500px;
+   background-color: rgb(231, 127, 127);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   $background-color
+
+}
+
+.container {
+   width: 100%;
+   height: 30%;
+   background-color: rgb(95, 169, 221);
+   display: flex;
+   flex-direction: row;
+   position: relative;
+
+}
+
+.container-twit {
+   @include cont-soc( 200px, 100%, relative);
+  
+}
+
+.twit {
+   @include socl( 199px, 100%, absolute, hidden);
+
+}
+
+.twit-block {
+   @include block( 200px, 100%, absolute);
+ 
+}
+
+.sprite-t {
+   @include sprite( 170px, 170px, 150px 10px);
+   content: url(./img/twitter.svg);
+  
+}
+
+.twit-block-1 {
+   @include block1( 200px, 100%, absolute, translate(200px), 0.5s);
+   background-color: rgb(73, 186, 234);
+}
+
+.container-twit:hover .twit-block-1{
+   transform: translate(0px);
+   display: block;
+}
+
+
+
+.twit-block-2 {
+   @include block2( 0px, 100%, absolute, flex, center, center, 200px, 
+                  translate(0px), white, 0.5s, hidden, nowrap, 30px, 1);
+         
+}
+
+.container-twit:hover .twit-block-2{ 
+  width: 500px;
+
+}
+
+
+.container-face{
+   @include cont-soc( 200px, 100%, relative);
+   
+}
+
+.face{
+   @include socl( 199px, 100%, absolute, hidden);
+  
+}
+
+.face-block{
+   @include block( 200px, 100%, absolute);
+}
+
+.sprite-f{
+   @include sprite( 170px, 170px, 150px 10px);
+   content: url(./img/facebook\ \(2\).svg);
+   
+
+}
+
+.face-block-1{
+   @include block1( 200px, 100%, absolute, translate(200px), 0.5s);
+   background-color: rgb(71, 71, 211);
+}
+
+.container-face:hover .face-block-1{
+   transform: translate(0px);
+   display: block;
+}
+
+.face-block-2{
+   @include block2( 0px, 100%, absolute, flex, center, center, 200px, 
+   translate(0px), white, 0.5s, hidden, nowrap, 30px, 1);
+}
+
+.container-face:hover .face-block-2{
+   width: 500px;
+}
+
+
+.container-in {
+   @include cont-soc( 200px, 100%, relative);
+ }
+ 
+ .in {
+   @include socl( 199px, 100%, absolute, hidden);
+ }
+ 
+ .in-block {
+   @include block( 200px, 100%, absolute);
+ }
+ 
+ .sprite-in {
+   @include sprite( 170px, 170px, 150px 10px);
+   content: url(./img/linkedin\ \(2\).svg);
+   
+ }
+ 
+ .in-block-1 {
+   @include block1( 200px, 100%, absolute, translate(200px), 0.5s);
+   background-color: rgb(12, 55, 148);
+ }
+ 
+ .container-in:hover .in-block-1 {
+   transform: translate(0px);
+   display: block;
+ }
+ 
+ .in-block-2 {
+   @include block2( 0px, 100%, absolute, flex, center, center, 200px, 
+   translate(0px), white, 0.5s, hidden, nowrap, 30px, 1);
+ }
+ 
+ .container-in:hover .in-block-2 {
+   width: 500px;
+  
+ }
+
+ .container-insta {
+   @include cont-soc( 200px, 100%, relative);
+ }
+ 
+ .insta {
+   @include socl( 199px, 100%, absolute, hidden);
+ }
+ 
+ .insta-block {
+   @include block( 200px, 100%, absolute);
+ }
+ 
+ .sprite-insta {
+   @include sprite( 170px, 170px, 150px 10px);
+   content: url(./img/instagram-alt\ \(2\).svg);
+   
+ }
+ 
+ .insta-block-1 {
+   @include block1( 200px, 100%, absolute, translate(200px), 0.5s);;
+   background-color: rgb(57, 123, 9);
+ }
+ 
+ .container-insta:hover .insta-block-1 {
+   transform: translate(0px);
+   display: block;
+ }
+ 
+ .insta-block-2 {
+   @include block2( 0px, 100%, absolute, flex, center, center, 200px, 
+   translate(0px), white, 0.5s, hidden, nowrap, 30px, 1);
+ }
+ 
+ .container-insta:hover .insta-block-2 {
+   width: 500px;
+  
+ }
+
+ 
+ .container-you {
+   @include cont-soc( 200px, 100%, relative);
+ 
+ }
+ 
+ .you {
+   @include socl( 199px, 100%, absolute, hidden);
+ }
+ 
+ .you-block {
+   @include block( 200px, 100%, absolute);
+ }
+ 
+ .sprite-you {
+   @include sprite( 170px, 170px, 150px 10px);
+   content: url(./img/youtube.svg);
+   
+ }
+ 
+ .you-block-1 {
+   @include block1( 200px, 100%, absolute, translate(200px), 0.5s);
+   background-color: rgb(183, 49, 15);
+ }
+ 
+ .container-you:hover .you-block-1 {
+   transform: translate(0px);
+   display: block;
+ }
+ 
+ .you-block-2 {
+   @include block2( 0px, 100%, absolute, flex, center, center, 200px, 
+   translate(0px), white, 0.5s, hidden, nowrap, 30px, 1);
+ }
+ 
+ .container-you:hover .you-block-2 {
+   width: 500px;
+  
+ }
+
+ .container-tum {
+   @include cont-soc( 200px, 100%, relative);
+ }
+ 
+ .tum {
+   @include socl( 199px, 100%, absolute, hidden);
+ }
+ 
+ .tum-block {
+   @include block( 200px, 100%, absolute);
+ }
+ 
+ .sprite-tum {
+   @include sprite( 170px, 170px, 150px 10px);
+   content: url(./img/tumblr-square\ \(2\).svg);
+   
+ }
+
+ 
+ .tum-block-1 {
+   @include block1( 200px, 100%, absolute, translate(200px), 0.5s);
+   background-color: rgb(35, 14, 9);
+ }
+ 
+ .container-tum:hover .tum-block-1 {
+   transform: translate(0px);
+   display: block;
+ }
+ 
+ .tum-block-2 {
+   @include block2( 0px, 100%, absolute, flex, center, center, 200px, 
+   translate(0px), white, 0.5s, hidden, nowrap, 30px, 1);
+ }
+ 
+ .container-tum:hover .tum-block-2 {
+   width: 500px;
+  
+ }
+
+ 
+ .container-drib {
+   @include cont-soc( 200px, 100%, relative);
+ }
+ 
+ .drib {
+   @include socl( 199px, 100%, absolute, hidden);
+ }
+ 
+ .drib-block {
+   @include block( 200px, 100%, absolute);
+ }
+ 
+ .sprite-drib {
+   @include sprite( 170px, 170px, 150px 10px);
+   content: url(./img/dribbble.svg);
+  
+ }
+
+ .drib-block-1 {
+   @include block1( 200px, 100%, absolute, translate(200px), 0.5s);
+   background-color: rgb(118, 25, 2);
+ }
+ 
+ .container-drib:hover .drib-block-1 {
+   transform: translate(0px);
+   display: block;
+ }
+ 
+ .drib-block-2 {
+   @include block2( 0px, 100%, absolute, flex, center, center, 200px, 
+   translate(0px), white, 0.5s, hidden, nowrap, 30px, 1);
+ }
+ 
+ .container-drib:hover .drib-block-2 {
+   width: 500px;
+  
+ }
